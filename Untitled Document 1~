@@ -1,0 +1,65 @@
+#include<iostream>
+
+using namespace std;
+
+struct node
+{
+	int d;
+	struct node *llink, *rlink;
+};
+
+class BST
+{
+	public:
+	node *st;
+	void ins(struct node *st);
+};
+
+void BST::ins(struct node *st)
+{
+	struct node *temp;
+	do
+	{
+	temp=new node;
+	cout<<"\nEnter the data for new node: ";
+	cin>>n;
+	if(st==NULL)
+	{
+		temp->d=n;
+		temp->llink=NULL;
+		temp->rlink=NULL;
+	}
+		
+	else
+	{
+		temp->d=n;
+		while(trav!=NULL)
+		{
+			if(trav->d==n)
+			{
+				cout<<"\nNode already exists";
+				break;
+				f=0;
+			}
+			else
+			{
+			if(n<trav->d)
+			{
+				trav=trav->llink;
+				par=trav;
+				greater=0;
+			}
+			else
+			{
+				trav=trav->rlink;
+				par=trav;
+				greater=1;
+			}
+			}
+		}
+		if(greater==0 && f)par->llink=temp;
+		if(greater==1 && f) par->rlink=temp;
+		cout<<"\nWant to enter more nodes?";
+		cin>>ch;
+	}while(tolower(ch)=='y');
+}

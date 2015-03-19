@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1425617712 source:/home/ajalan/programs/intopost/main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

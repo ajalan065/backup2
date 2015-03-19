@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1425646493 source:/home/ajalan/programs/intopostfix/main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+

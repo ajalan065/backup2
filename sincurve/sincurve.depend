@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1425647273 source:/home/ajalan/programs/sincurve/main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+
